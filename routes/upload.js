@@ -28,6 +28,7 @@ const upload = multer({ storage: storage });
 // router.get('/', function (req, res, next) {
 //   res.send('respond with a resource');
 // });
+//
 
 router.post('/', upload.array('image', 12), function (req, res, next) {
 
